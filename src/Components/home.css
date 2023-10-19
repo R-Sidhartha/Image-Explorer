@@ -1,0 +1,115 @@
+
+  .search{
+    background-image: url("../Components/pics/searchbg.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    height: 100%;
+  }
+  .searchbar input{
+    width: 60vw;
+    height: 50px;
+  }
+  .darkmode_search{
+    background-image: url("../Components/pics/searchbgdarkmode.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    height: 100%;
+  }
+  .gridcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .modal_gridcontainer {
+    display: grid;
+    width: 50vw;
+    grid-template-columns: 1fr 1fr ;
+  }
+  .lower-opacity {
+    opacity: 0.6; 
+  }
+  .image {
+    border: 1px solid rgba(201, 196, 196, 0.95);
+    border-radius: 4px;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .image img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+  }
+  
+  .modal-container {
+    min-height: 120vh;
+    width: 50vw;
+    background: rgba(21, 41, 47, 0.95);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0%;
+    right: 0;
+    overflow-y: auto;  }
+.content {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    background: rgba(21, 41, 47, 0.95); 
+    height: 190%;
+    color: white;
+    overflow: auto;
+    margin-bottom: 170px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  .ScrollToTop {
+    background: #223368;
+    height: 30px;
+    width: 30px;
+    color: #ffface;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    position: fixed;
+    top: 92%;
+    left: 96%;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .disablebtn{
+    pointer-events: none;
+  }
+
+@media screen and (max-width: 750px) {
+    .ScrollToTop {
+    display: none;
+    }
+    .searchtitle{
+      color: white;
+    }
+    .gridcontainer{
+      grid-template-columns: 1fr 1fr;
+    }
+.modal-container{
+  width: 100vw;
+}
+.content{
+margin-bottom: 300px;
+}
+.searchbar input{
+  width: 80vw;
+  height: 40px;
+}
+  }
+
+  

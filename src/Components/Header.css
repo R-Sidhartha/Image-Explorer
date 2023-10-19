@@ -1,0 +1,15 @@
+.mode img{
+    height: 35px;
+    width: auto;
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    top: 10px;
+}
+@media screen and (max-width:1000px) {
+    .mode img{
+        right: 77px;
+
+    }
+    
+}
