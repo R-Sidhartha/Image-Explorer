@@ -136,7 +136,7 @@ function Home({ mode, handleImageClick, selectedImage, closeImageModal }) {
         } d-flex justify-content-center align-items-center flex-column`}
         style={{ height: "48vh" }}
       >
-        <h2 className={`${mode === "light" ? "searchtitle" : ""} text-center`}>
+        <h2 className={`${mode === "light" ? "searchtitle" : ""} text-center searchheading`}>
           Explore the World Through Images
         </h2>
         <h6 className={`${mode === "light" ? "searchtitle" : ""}`}> "Instantly Find Stunning Photos with Our Search"</h6>

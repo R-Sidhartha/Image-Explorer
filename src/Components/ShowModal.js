@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./home.css";
 
 function ShowModal({ selectedImage, onClose }) {
   const [width,setwidth]=useState('80%')
@@ -38,12 +39,12 @@ const formattedDate = formatDate(selectedImage.updated_at);
       </div>
       <div className="content" >
       <p className="text-center">"{selectedImage.alt_description}"</p>
-
         <img
           src={selectedImage.urls.regular}
           alt={selectedImage.alt_description}
           style={{ width: width,height:'auto' }}
         />
+
         <div className="image-details my-2" style={{width:'100%'}}>
           <div className="d-flex justify-content-between">
           <p>
@@ -53,14 +54,15 @@ const formattedDate = formatDate(selectedImage.updated_at);
               alt="profile-pic"
               style={{ width: "30px", borderRadius: "20px" }}
             />
-            <span style={{textDecoration:'underline',color:'rgb(149, 255, 119)'}}>Photographer</span>: {selectedImage.user.name} on <a href="https://unsplash.com/" style={{color:'#407195'}}>(Unsplash)</a>
+            <span style={{textDecoration:'underline',color:'rgb(149, 255, 119)'}}>Photographer</span>: {selectedImage.user.name}<a href="https://unsplash.com/" style={{color:'#407195'}}>(Unsplash)</a>
           </p>
               <span className="mx-4"><span style={{textDecoration:'underline',color:'rgb(149, 255, 119)'}}>Updated on</span>: {formattedDate}</span>
               
           </div>
          <div className="d-flex justify-content-between ">
-          <div className="icons d-flex">
+          <div className="socailmedia">
             <h6 className="ml-5"style={{textDecoration:'underline',color:'rgb(149, 255, 119)'}}>Social Media Links: </h6>
+            <div className="icons">
             <a
               href={`https://www.instagram.com/${selectedImage.user.social.instagram_username}`}
               target="_blank"
@@ -94,6 +96,7 @@ const formattedDate = formatDate(selectedImage.updated_at);
             >
               <i className="fa-solid fa-earth-americas fa-xl"></i>
             </a>
+            </div>
           </div>
           <p className=" mx-5 d-flex">
             <div className="likebtn  mx-2">

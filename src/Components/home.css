@@ -39,7 +39,9 @@
     max-height: 200px;
     object-fit: cover;
   }
-  
+  .socailmedia{
+    display: flex;
+  }
   .modal-container {
     min-height: 120vh;
     width: 50vw;
@@ -96,6 +98,10 @@
     }
     .searchtitle{
       color: white;
+      
+    }
+    .searchheading{
+      margin-top: 35px;
     }
     .gridcontainer{
       grid-template-columns: 1fr 1fr;
@@ -103,6 +109,19 @@
 .modal-container{
   width: 100vw;
 }
+.socailmedia{
+  flex-direction: column;
+}
+.icons{
+display: flex;
+margin-left: 40px;
+}
+.likebtn{
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
 .content{
 margin-bottom: 300px;
 }
