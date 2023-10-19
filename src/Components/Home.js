@@ -139,7 +139,7 @@ function Home({ mode, handleImageClick, selectedImage, closeImageModal }) {
         <h2 className={`${mode === "light" ? "searchtitle" : ""} text-center`}>
           Explore the World Through Images
         </h2>
-        <h7 className={`${mode === "light" ? "searchtitle" : ""}`}> "Instantly Find Stunning Photos with Our Search"</h7>
+        <h6 className={`${mode === "light" ? "searchtitle" : ""}`}> "Instantly Find Stunning Photos with Our Search"</h6>
         <div className="searchbar d-flex my-3">
           <input
             className="form-control mr-sm-2 input-placeholder"

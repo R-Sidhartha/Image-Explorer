@@ -9,7 +9,6 @@ const Myimages = ({
   closeImageModal,
 }) => {
   const myImagesArray = JSON.parse(localStorage.getItem("myimages")) || [];
-  console.log(myImagesArray);
   return (
     <div>
       <h1

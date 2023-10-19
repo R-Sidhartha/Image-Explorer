@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const Images = ({ image, mode, handlestarbtn }) => {
+const Images = ({ image, mode }) => {
   const [startype, setstartype] = useState("regular");
   if (!localStorage.getItem("myimages")) {
     localStorage.setItem("myimages", JSON.stringify([]));
@@ -39,7 +39,6 @@ const Images = ({ image, mode, handlestarbtn }) => {
       myImagesArray.splice(index, 1);
       setstartype("regular");
     }
-    console.log(myImagesArray);
     // Update the local storage with the modified `myimages` array
     localStorage.setItem("myimages", JSON.stringify(myImagesArray));
   };
@@ -59,7 +58,8 @@ const Images = ({ image, mode, handlestarbtn }) => {
               alt="profile-pic"
               style={{ width: "25px", borderRadius: "20px" }}
             />
-            Photographer: {image.user.name}
+            <span style={{textDecoration:'underline'}}>Photographer:</span> <span> <a style={{color: `${mode === "dark" ? "black" : "white"}`}} href={image.user.links.self}>{image.user.name}</a></span>
+           
           </p>
           <p className="my-3 mx-2">
             <i
